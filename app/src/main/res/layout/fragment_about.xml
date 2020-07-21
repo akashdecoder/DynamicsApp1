@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backhome"
+    tools:context=".About">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="Team Dynamics is a multi-disciplinary highly enthusiastic student group from Siddaganga Institute of Technology who have come together striving to design and build next generation rovers for exploration of extraterrestrial environments and applications of robotics in interplanetary missions.Our Rover 'BOSE' is used to compete in different national and international competitions including IRC(Indian Rover Challenge), URC (University Rover challenge), ERC (European Rover Challenge) and CIRC(Canadian International Rover Challenge). These competitions provide a platform for student-run teams from all over the globe to showcase their respective rovers.">
+        </TextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.core.widget.NestedScrollView>

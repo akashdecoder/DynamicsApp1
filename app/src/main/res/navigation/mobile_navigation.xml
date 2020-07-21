@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.dynamicsapp1.ui.home.HomeFragment"
+        android:label="Dynamics"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.dynamicsapp1.ui.gallery.GalleryFragment"
+        android:label="@string/menu_articles"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.dynamicsapp1.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_events"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.dynamicsapp1.BlankFragment"
+        android:label="Recruitment"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/uploads"
+        android:name="com.example.dynamicsapp1.Uploads"
+        android:label="Uploads"
+        tools:layout="@layout/fragment_uploads" />
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.dynamicsapp1.About"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.dynamicsapp1.Login"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/contact"
+        android:name="com.example.dynamicsapp1.contactus"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contactus" />
+</navigation>

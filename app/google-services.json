@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "669886409407",
+    "firebase_url": "https://dynamicsappproject2020.firebaseio.com",
+    "project_id": "dynamicsappproject2020",
+    "storage_bucket": "dynamicsappproject2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669886409407:android:3218662d4352cc8d22340a",
+        "android_client_info": {
+          "package_name": "com.example.dynamicsapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669886409407-5321tkc7tco5bskh5pafnvg2tdq8lpgv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDPe_4iZtPYRl4DW-gOpnwJLXkI7CMyiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669886409407-5321tkc7tco5bskh5pafnvg2tdq8lpgv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

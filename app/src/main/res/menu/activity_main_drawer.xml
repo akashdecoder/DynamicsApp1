@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="General">
+        <group android:checkableBehavior="single">
+            <menu>
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_baseline_home"
+                    android:title="@string/menu_home" />
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="@string/menu_articles" />
+                <item
+                    android:id="@+id/nav_slideshow"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="@string/menu_events" />
+                <item
+                    android:id="@id/blankFragment"
+                    android:icon="@drawable/ic_menu_people"
+                    android:title="Recruitments"/>
+                <item
+                    android:id="@id/uploads"
+                    android:icon="@drawable/ic_menu_uploads"
+                    android:title="Upload"/>
+                <item
+                    android:id="@+id/about"
+                    android:icon="@drawable/ic_baseline_contact_support_24"
+                    android:title="AboutUs"/>
+            </menu>
+        </group>
+    </item>
+    <item android:title="Communication">
+        <group android:checkableBehavior="single">
+            <menu>
+                <item
+                    android:id="@+id/contact"
+                    android:icon="@drawable/ic_contact"
+                    android:title="Contact Us"/>
+            </menu>
+        </group>
+    </item>
+
+<!--    <item android:title="Users">-->
+<!--        <group android:checkableBehavior="single">-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/logout"-->
+<!--                    android:icon="@drawable/ic_logout"-->
+<!--                    android:title="Logout"/>-->
+<!--            </menu>-->
+<!--        </group>-->
+<!--    </item>-->
+</menu>
+
