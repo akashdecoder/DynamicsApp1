@@ -12,42 +12,68 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.dynamicsapp1.databinding.FragmentBlankBinding;
+import com.example.dynamicsapp1.databinding.FragmentRegisterCodingBinding;
 import com.example.dynamicsapp1.mail.SendMail;
 import com.example.dynamicsapp1.ui.home.HomeFragment;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class BlankFragment extends Fragment {
-    FragmentBlankBinding binding;
-    DatabaseReference databaseReference;
-    Recruit recruit;
-    public BlankFragment() {
+import java.util.Properties;
+
+import javax.mail.Authenticator;
+import javax.mail.Message;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+
+
+public class RegisterCoding extends Fragment implements AdapterView.OnItemSelectedListener {
+
+    FragmentRegisterCodingBinding binding;
+    DatabaseReference reference;
+    UserEvent userEvent;
+
+    public RegisterCoding() {
     }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        binding = FragmentRegisterCodingBinding.inflate(getLayoutInflater());
+        View view = inflater.inflate(R.layout.fragment_register_coding, container, false);
+        return binding.getRoot();
+    }
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    }
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentBlankBinding.inflate(getLayoutInflater());
-        View view = inflater.inflate(R.layout.fragment_blank, container, false);
-        return binding.getRoot();
+
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        recruit = new Recruit();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("Recruitments");
+        reference = FirebaseDatabase.getInstance().getReference().child("Coding");
+        userEvent = new UserEvent();
+        Spinner spinner = (Spinner) binding.typeCodingEvent;
 
-        binding.registerbutton.setOnClickListener(new View.OnClickListener() {
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+                getContext(), R.array.spinner_coding, android.R.layout.simple_spinner_item
+        );
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
+
+        binding.registercoding.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final String name = binding.userName.getText().toString();
@@ -55,12 +81,14 @@ public class BlankFragment extends Fragment {
                 final String phone = binding.phone.getText().toString();
                 final String usn = binding.userUsn.getText().toString();
                 final String year = binding.userYear.getText().toString();
+                final String event = binding.typeCodingEvent.getSelectedItem().toString();
 
-                recruit.setUserName(name);
-                recruit.setUserEmail(email);
-                recruit.setContact(phone);
-                recruit.setUsn(usn);
-                recruit.setYear(year);
+                userEvent.setUserName(name);
+                userEvent.setUserEmail(email);
+                userEvent.setContact(phone);
+                userEvent.setEvent(event);
+                userEvent.setUsn(usn);
+                userEvent.setYear(year);
 
                 if(name.isEmpty()){
                     binding.userName.setError("Please Enter Your Name");
@@ -77,33 +105,51 @@ public class BlankFragment extends Fragment {
                 } else if(year.isEmpty()){
                     binding.userYear.setError("Please Enter Your Year");
                     binding.userYear.requestFocus();
+                } else if(event.equals("--EVENT--")){
+                    binding.userYear.setError("Please Select the Event");
+                    binding.userYear.requestFocus();
                 } else if(name.isEmpty() && email.isEmpty() && phone.isEmpty() && usn.isEmpty() && year.isEmpty()){
                     Toast.makeText(getContext(),"Fields Are Empty!",Toast.LENGTH_SHORT).show();
                 } else if(!name.isEmpty() && !email.isEmpty() && !phone.isEmpty() && !usn.isEmpty() && !year.isEmpty()){
-                    databaseReference.push().setValue(recruit);
-                    String subject = "Apply for Recruitment";
-                    String message = "Hello " + name + ", coming forward for the recruitment process." +
+                    reference.push().setValue(userEvent);
+                    String subject = "Registration For: " + event;
+                    String message = "Hello " + name + ", Thank you for registering to " + event + "\n" +
                             "Keep in touch to know more updates\n\n" +
                             "With Regards,\nDYNAMICS\n(Project Oriented Community)";
                     sendEmail(getContext(), email, subject, message);
-//                    Toast.makeText(getContext(),"Registration Successful",Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getContext(),"Registration Successful !! Check Mail",
+//                            Toast.LENGTH_SHORT).show();
+
                     Fragment fragment = new HomeFragment();
                     FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                     fragmentTransaction.replace(R.id.nav_host_fragment, fragment);
                     fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commit();
+
                 } else{
                     Toast.makeText(getContext(),"!!Error Occurred!!",Toast.LENGTH_SHORT).show();
                 }
 
-
             }
         });
+
+
+
     }
 
     private void sendEmail(Context context, String email, String subject, String message) {
         SendMail sendMail = new SendMail(context, email, subject, message);
         sendMail.execute();
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        Toast.makeText(getContext(), parent.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }

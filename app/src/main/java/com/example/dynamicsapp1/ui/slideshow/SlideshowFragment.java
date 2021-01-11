@@ -17,6 +17,9 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.dynamicsapp1.HackerrankContest;
 import com.example.dynamicsapp1.R;
+import com.example.dynamicsapp1.RegisterCoding;
+import com.example.dynamicsapp1.Robotics;
+import com.example.dynamicsapp1.Workshop;
 import com.example.dynamicsapp1.contactus;
 import com.example.dynamicsapp1.databinding.FragmentHomeBinding;
 import com.example.dynamicsapp1.databinding.FragmentSlideshowBinding;
@@ -28,7 +31,7 @@ public class SlideshowFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentSlideshowBinding.inflate(getLayoutInflater());
-        View view = inflater.inflate(R.layout.fragment_hackerrank_contest, container, false);
+        View view = inflater.inflate(R.layout.fragment_slideshow, container, false);
         return binding.getRoot();
     }
 
@@ -36,10 +39,10 @@ public class SlideshowFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.register.setOnClickListener(new View.OnClickListener() {
+        binding.registerCoding.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new HackerrankContest();
+                Fragment fragment = new RegisterCoding();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.nav_host_fragment, fragment);
@@ -47,5 +50,30 @@ public class SlideshowFragment extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.robotics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new Robotics();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.nav_host_fragment, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+        binding.workshop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new Workshop();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.nav_host_fragment, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
     }
 }

@@ -15,4 +15,25 @@
     <string name="menu_about">About</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="spinner_coding">
+        <item>--EVENT--</item>
+        <item>CODE@ARENA</item>
+        <item>REVERSE IT</item>
+        <item>WHAT IS THE LOGIC</item>
+    </string-array>
+
+    <string-array name="spinner_robotics">
+        <item>--EVENT--</item>
+        <item>Event 1</item>
+        <item>Event 2</item>
+        <item>Event 3</item>
+    </string-array>
+
+    <string-array name="spinner_workshop">
+        <item>--EVENT--</item>
+        <item>Event 1</item>
+        <item>Event 2</item>
+        <item>Event 3</item>
+    </string-array>
 </resources>
