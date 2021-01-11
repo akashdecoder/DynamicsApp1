@@ -7,7 +7,7 @@
     android:id="@+id/nestedScrollView"
     android:padding="20dp"
     android:orientation="vertical"
-    android:background="@drawable/side_nav_bar"
+    android:background="@color/cardview_light_background"
     tools:context=".BlankFragment">
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -20,6 +20,17 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
             android:src="@drawable/logol"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_default_color_secondary_variant"
+            android:text="Register"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayoutName"
@@ -103,7 +114,6 @@
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
-
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/registerbutton"
             android:layout_width="match_parent"
@@ -111,6 +121,7 @@
             android:layout_marginTop="100dp"
             android:background="@color/design_default_color_on_secondary"
             android:text="Register"
+            android:clickable="false"
             android:textColor="@color/cardview_light_background"/>
 
 

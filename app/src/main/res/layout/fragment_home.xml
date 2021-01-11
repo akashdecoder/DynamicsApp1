@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
-    android:background="@drawable/backhome">
+    android:background="@color/cardview_light_background">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -106,8 +106,68 @@
 <!--                </LinearLayout>-->
 <!--            </androidx.cardview.widget.CardView>-->
 
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/Article"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                app:cardElevation="6dp"-->
+<!--                app:cardCornerRadius="12dp"-->
+<!--                android:layout_margin="12dp">-->
+<!--                <LinearLayout-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="16dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/side_nav_bar">-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        android:src="@drawable/ic_baseline_articles"/>-->
+<!--                    <TextView-->
+<!--                        android:text="Articles"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:textColor="@color/colorAccent"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/side_nav_bar">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_card_events"/>
+                <TextView
+                    android:text="Events"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:id="@+id/Article"
+                android:id="@+id/Contact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -122,12 +182,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/side_nav_bar">
+
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ic_baseline_articles"/>
+                        android:src="@drawable/ic_baseline_articles"
+                        app:srcCompat="@drawable/ic_contact" />
                     <TextView
-                        android:text="Articles"
+                        android:text="Contact Us"
                         android:layout_marginTop="12dp"
                         android:textColor="@color/colorAccent"
                         android:textSize="18sp"
@@ -137,36 +199,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/Events"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/side_nav_bar">
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ic_card_events"/>
-                    <TextView
-                        android:text="Events"
-                        android:layout_marginTop="12dp"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+
 
 <!--            <androidx.cardview.widget.CardView-->
 <!--                android:id="@+id/ContactUs"-->

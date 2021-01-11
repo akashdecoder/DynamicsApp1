@@ -3,18 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backhome"
+    android:background="@color/cardview_light_background"
     tools:context=".About">
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\nAbout Us\n"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="35dp"></TextView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="30sp"
-            android:text="Team Dynamics is a multi-disciplinary highly enthusiastic student group from Siddaganga Institute of Technology who have come together striving to design and build next generation rovers for exploration of extraterrestrial environments and applications of robotics in interplanetary missions.Our Rover 'BOSE' is used to compete in different national and international competitions including IRC(Indian Rover Challenge), URC (University Rover challenge), ERC (European Rover Challenge) and CIRC(Canadian International Rover Challenge). These competitions provide a platform for student-run teams from all over the globe to showcase their respective rovers.">
-        </TextView>
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:text="Dynamics, a Project-Oriented Community, is a multi-disciplinary technical group of CSE department in Siddaganga Institute of Technology which focuses on both hardware and software-based projects. Our motive is to help fellow engineers with their blooming project ideas in different tech domains.
+
+We conduct regular events and frequent hackathons to test the skills and ability of the students.
+
+\n\nWe are glad to announce the establishment of our new chapter in SIt, Tumkur"
+            android:textSize="30dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:autoLink="web"
+            android:textColor="@color/design_default_color_secondary_variant"
+            android:text="Mars Society Chapter SIT"
+            android:textSize="30sp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:autoLink="web"
+            android:textColor="@color/design_default_color_secondary_variant"
+            android:text="www.dynamicspoc.in/rover"
+            android:textSize="20dp"></TextView>
+
 
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.core.widget.NestedScrollView>

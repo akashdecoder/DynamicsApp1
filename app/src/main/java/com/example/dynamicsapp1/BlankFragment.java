@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.dynamicsapp1.databinding.FragmentBlankBinding;
@@ -42,7 +43,7 @@ public class BlankFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         recruit = new Recruit();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("Registers");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Recruitments");
 
         binding.registerbutton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -25,6 +25,7 @@ import com.example.dynamicsapp1.Login;
 import com.example.dynamicsapp1.R;
 import com.example.dynamicsapp1.Uploads;
 import com.example.dynamicsapp1.contactus;
+
 import com.example.dynamicsapp1.databinding.FragmentHomeBinding;
 import com.example.dynamicsapp1.ui.gallery.GalleryFragment;
 import com.example.dynamicsapp1.ui.slideshow.SlideshowFragment;
@@ -80,10 +81,22 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        binding.Article.setOnClickListener(new View.OnClickListener() {
+//        binding.Article.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Fragment fragment = new GalleryFragment();
+//                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.nav_host_fragment, fragment);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
+//            }
+//        });
+
+        binding.Contact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new GalleryFragment();
+                Fragment fragment = new contactus();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.nav_host_fragment, fragment);

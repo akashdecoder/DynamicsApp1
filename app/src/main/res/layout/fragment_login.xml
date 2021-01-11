@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    android:background="@drawable/side_nav_bar"
+    android:background="@color/cardview_light_background"
     tools:context=".Login">
 <!--    <androidx.appcompat.widget.LinearLayoutCompat-->
 <!--        android:layout_width="match_parent"-->
@@ -59,12 +59,24 @@
 <!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
 
 
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_gravity="center">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_default_color_secondary_variant"
+            android:text="Upload"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
         <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="20dp"
             android:id="@+id/Choose"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

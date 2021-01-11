@@ -30,7 +30,7 @@
     <TextView
         android:id="@+id/userText"
         android:autoLink="web"
-        android:text="bit.ly/RoverBOSE"
+        android:text="www.dynamicspoc.in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
          />
