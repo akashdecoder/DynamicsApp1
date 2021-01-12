@@ -85,7 +85,7 @@ public class Uploads extends Fragment {
             public void onClick(View v) {
                 String name = binding.username.getText().toString().trim();
                 String pass = binding.userpassword.getText().toString().trim();
-                String pass1 = "Github@2020";
+//                String pass1 = "Github@2020";
                 if(name.isEmpty()){
                     binding.username.setError("Enter your Username");
                     binding.username.requestFocus();

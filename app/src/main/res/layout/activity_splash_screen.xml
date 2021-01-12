@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/splash4"
+        android:background="@color/cardview_light_background"
         android:gravity="center"
         android:orientation="vertical"
         android:visibility="visible">
@@ -29,7 +29,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:text="PROJECT ORIENTED COMMUNITY"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/design_default_color_secondary_variant"
             android:textSize="23sp"
             android:textStyle="bold" />
     </LinearLayout>

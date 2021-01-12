@@ -13,11 +13,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/heading"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_marginTop="20dp"
             app:cardElevation="6dp"
             app:cardCornerRadius="12dp"
             android:layout_margin="12dp">
@@ -165,7 +176,7 @@
                 android:layout_marginTop="30dp"
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="16dp"
-                android:text="9882058173"/>
+                android:text="9827926807"/>
 
             <TextView
                 android:id="@+id/emailSrijan"
@@ -176,7 +187,7 @@
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="16dp"
                 android:autoLink="email"
-                android:text="srijan@gmail.com"/>
+                android:text="srijanchandrakar10@gmail.com"/>
 
 
         </androidx.cardview.widget.CardView>
@@ -207,7 +218,7 @@
                 android:layout_marginTop="30dp"
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="16dp"
-                android:text="9882058173"/>
+                android:text="9482117332"/>
 
             <TextView
                 android:id="@+id/emailSubra"
@@ -218,7 +229,7 @@
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="16dp"
                 android:autoLink="email"
-                android:text="subra@gmail.com"/>
+                android:text=" subramanyag9112@gmail.com"/>
 
 
         </androidx.cardview.widget.CardView>
@@ -249,7 +260,7 @@
                 android:layout_marginTop="30dp"
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="16dp"
-                android:text="9882058173"/>
+                android:text="9591264350"/>
 
             <TextView
                 android:id="@+id/emailPrerna"
@@ -260,7 +271,7 @@
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="16dp"
                 android:autoLink="email"
-                android:text="prerna@gmail.com"/>
+                android:text="shettyprerana3@gmail.com"/>
 
 
         </androidx.cardview.widget.CardView>
@@ -291,7 +302,7 @@
                 android:layout_marginTop="30dp"
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="16dp"
-                android:text="9882058173"/>
+                android:text="9797436494"/>
 
             <TextView
                 android:id="@+id/emailKhalid"
@@ -302,7 +313,7 @@
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="16dp"
                 android:autoLink="email"
-                android:text="khalid@gmail.com"/>
+                android:text="wandererkhalid@gmail.com"/>
 
 
         </androidx.cardview.widget.CardView>
@@ -333,7 +344,7 @@
                 android:layout_marginTop="30dp"
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="16dp"
-                android:text="9882058173"/>
+                android:text="9008309121"/>
 
             <TextView
                 android:id="@+id/emailKushala"
@@ -344,10 +355,558 @@
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="16dp"
                 android:autoLink="email"
-                android:text="kushala@gmail.com"/>
+                android:text="seekushala.r@gmail.com"/>
 
 
         </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/NameSiri"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIRI A M"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phoneSiri"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="8073734634"/>
+
+            <TextView
+                android:id="@+id/emailSiri"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="meemusiri@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/NameAnup"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ANOOP KUMAR SS"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phoneAnup"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="8310941895"/>
+
+            <TextView
+                android:id="@+id/emailAnup"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="anoopshavi55@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/NameGL"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIDDHARTH G L"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phoneGL"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="7022501595"/>
+
+            <TextView
+                android:id="@+id/emailGL"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="siddharth7846@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/NameNaveen"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAVEEN T ACHARYA"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phoneNaveen"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="8904308875"/>
+
+            <TextView
+                android:id="@+id/emailNaveen"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="naveentacharya246@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/NameSri"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AKANKSHA SRIVASTAVA"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phoneSri"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="9166894355"/>
+
+            <TextView
+                android:id="@+id/emailSri"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="akankshasrivastava18cs@sit.ac.in"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/NameRax"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RAKSHITA B"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phoneRax"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="8722072545"/>
+
+            <TextView
+                android:id="@+id/emailRax"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="rakshitabantwal1@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/NameTeja"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VISHNU TEJA S"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phoneteja"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="7760595292"/>
+
+            <TextView
+                android:id="@+id/emailTeja"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="vishnuteja2424@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/NameRk"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SWAROOP R K"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phoneRk"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="9535932886"/>
+
+            <TextView
+                android:id="@+id/emailRk"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="swarooprk2000@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/Namesai"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SAI RAKSHITH A M S"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phonsai"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="9738169560"/>
+
+            <TextView
+                android:id="@+id/emailsai"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="rakshith2305.sr@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/Namekv"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="K V NIRANJAN SHARMA"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phonekv"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="9739827316"/>
+
+            <TextView
+                android:id="@+id/emailkv"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="kvnsharma20@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/NameLoka"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOKASHREE B"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phoneLoka"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="9743371892"/>
+
+            <TextView
+                android:id="@+id/emailLoka"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="lokashree1510@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/NameKeer"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KEERTHANA BIDARE"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phoneKeer"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="9108468284"/>
+
+            <TextView
+                android:id="@+id/emailKeer"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="keerbidare2001@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:id="@+id/NameSagnik"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SAGNIK KUNDU"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/phoneSagnik"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:text="9432248240"/>
+
+            <TextView
+                android:id="@+id/emaiilSagnik"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:autoLink="email"
+                android:text="sagnik2751@gmail.com"/>
+
+
+        </androidx.cardview.widget.CardView>
+
 
 
 
